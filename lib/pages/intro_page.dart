@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'home_page.dart';
 
-class IntroPage extends StatelessWidget {
+class IntroPage extends StatelessWidget{
   const IntroPage({super.key});
 
   @override
@@ -27,7 +27,7 @@ class IntroPage extends StatelessWidget {
               ),
               const SizedBox(height: 48,),
               //title
-              Text(
+              const Text(
                 'Just Do it!',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -35,8 +35,8 @@ class IntroPage extends StatelessWidget {
                 ) ,
                 ),
                 const SizedBox(height: 10,),
-              Text(
-                'Brand New Items For Sale',
+              const Text(
+                'Brand New Items For Sale!',
                 style: TextStyle(
                   fontWeight: FontWeight.normal,
                   fontSize: 16,
@@ -46,7 +46,7 @@ class IntroPage extends StatelessWidget {
               const SizedBox(height: 48,),
           
               GestureDetector(
-                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),),),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage(),),),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
