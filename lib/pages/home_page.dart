@@ -72,6 +72,8 @@ class _HomePageState extends State<HomePage> {
                     semanticLabel: "Logo", ),
                 ),
               ),
+              const Text(
+                "NarDj",),
               const Padding(
                 padding: EdgeInsets.only(left: 25.0),
                 child: Divider(
@@ -83,6 +85,15 @@ class _HomePageState extends State<HomePage> {
                 child: ListTile(
                   leading: Icon(Icons.home),
                   title: Text("Home"),
+                  textColor: Colors.white,
+                  iconColor: Colors.white,
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 25.0),
+                child: ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text("Settings"),
                   textColor: Colors.white,
                   iconColor: Colors.white,
                 ),
